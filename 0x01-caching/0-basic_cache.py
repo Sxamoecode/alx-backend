@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-"""Caching system
+"""A Caching system
 """
+
+
 from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """
-    Import dict from parent class
+    """ - Import dict from parent class
     """
 
     def put(self, key, item):
-        """
-        assign item to caching system
+        """assign item to caching system
         """
         if key is None or item is None:
             return
