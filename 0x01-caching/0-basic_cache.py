@@ -13,12 +13,12 @@ class BasicCache(BaseCaching):
         """
         assign item to caching system
         """
-        if key or item is None:
+        if key is None or item is None:
             return
         self.caching_data[key] = item
 
     def get(self, key):
         """
-        return value2
+        return value in cache
         """
         return self.cache_data.get(key, None)
