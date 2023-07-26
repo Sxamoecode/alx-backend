@@ -1,23 +1,24 @@
 #!/usr/bin/python3
-"""
-Import class
+"""Caching system
 """
 from base_caching import BaseCaching
 
+
 class BasicCache(BaseCaching):
     """
-    Unlimited caching system
+    Import dict from parent class
     """
 
     def put(self, key, item):
         """
-        dictionaary
+        assign item to caching system
         """
-        self.cache_data
-        if key and item is None:
-            pass
+        if key or item is None:
+            return
+        self.caching_data[key] = item
 
     def get(self, key):
-        return self.cache_data[key]
-        if key is None:
-            return None
+        """
+        return value2
+        """
+        return self.cache_data.get(key, None)
